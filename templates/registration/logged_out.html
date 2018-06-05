@@ -1,0 +1,10 @@
+<!-- Shared across the wesbite, so not in the catalog folder.
+ Django (specifically accounts/logout) expects this to be registration/logout.html, so make a folder then put registration/logout.html in that for cleanliness-->
+ 
+{% extends "generic.html" %}
+
+{% block content %}
+<p>Logged out!</p>  
+
+<a href="{% url 'login'%}">Click here to login again.</a>
+{% endblock %}
